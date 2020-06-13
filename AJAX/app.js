@@ -1,6 +1,6 @@
 document.getElementById('cargar').addEventListener('click', cargarDatos);
 
-function cargarDatos(){
+function cargarDatos() {
     const xhr = new XMLHttpRequest();
 
     //Abrir una conexión
@@ -8,12 +8,14 @@ function cargarDatos(){
     
     xhr.onreadystatechange = function(){
 
-        console.log('Estado ${this.readyState}');
+        console.log(`Estado ${this.readyState}`);
           
         if(this.readyState === 4 && this.status === 200){
         
 
       }
+
+    }
 
       //ready status
       /*
@@ -24,7 +26,7 @@ function cargarDatos(){
       4: Respuesta lista
       */
 
-    }
+    
     //enviar request
     xhr.send();
 }
