@@ -25,8 +25,7 @@ boton1.addEventListener('click', function(){
 
 const boton2 = document.getElementById('boton2');
 
-boton1.addEventListener('click', function(){
-
+boton2.addEventListener('click', function(){
     const xhr = new XMLHttpRequest();
 
     xhr.open('GET', 'empleados.json', true);
